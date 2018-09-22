@@ -1,7 +1,7 @@
 package com.homeht;
 import com.reactnativecomponent.splashscreen.RCTSplashScreen;
 import com.facebook.react.ReactActivity;
-
+import android.os.Bundle;
 public class MainActivity extends ReactActivity {
 
     /**

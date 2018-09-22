@@ -35,7 +35,7 @@ class Confirm extends Component {
         return (
             <View style={styles.container}>
                 <ScrollView>
-                    <Image source={{url:'https://www.in-berlinhomes.com/wp-content/uploads/2018/09/Hauptstr_101_H101U22_006-500x334.jpg' }} style={styles.image}/>
+                    <Image source={{uri:'http://hgtvhome.sndimg.com/content/dam/images/door/fullset/2014/4/2/0/doory2014-1005-benedict-canyon-drive-beverly-hills-ca-living-room.jpg.rend.hgtvcom.966.644.suffix/1427751434340.jpeg' }} style={styles.image}/>
                     <View>
                         <Text style={styles.title}>
                             About the apartment:

@@ -78,7 +78,7 @@ export function* watchSubmitUser(client, { name, email, phone, salaryType }) {
         yield delay(750);
         yield put(submitUserSuccess(name, email, phone, salaryType));
         Toast.show('updated successfully', {
-            duration: 3000,
+            duration: 6000,
             position: Toast.positions.TOP,
             shadow: true,
             animation: true,

@@ -113,6 +113,7 @@ class Register extends Component {
                         <Text style={styles.caption}>Choose your salary range</Text>
                         <RadioForm
                             radio_props={radio_props}
+                            animation={false}
                             initial={unsavedSalaryType}
                             onPress={(unsavedSalaryType) => {
                                 Keyboard.dismiss();
