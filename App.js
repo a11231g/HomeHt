@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import SplashScreen from 'react-native-smart-splash-screen'
-
+import { Platform } from 'react-native';
 
 import ApiClient from './src/Utils/apiClient';
 import createStore from './src/Redux/create';
 import AppWithNavigationState from './src/Navigator/AppNavigator';
+let SplashScreen = '';
+Platform.OS === 'ios' ?  SplashScreen = require('react-native-smart-splash-screen') : SplashScreen = ''
 
 const client = new ApiClient();
 const store = createStore(client);
@@ -17,11 +18,14 @@ class App extends Component {
 
     componentDidMount () {
         //SplashScreen.close(SplashScreen.animationType.scale, 850, 500)
-        SplashScreen.close({
-            animationType: SplashScreen.animationType.scale,
-            duration: 850,
-            delay: 500,
-        })
+        if(SplashScreen){
+            SplashScreen.close({
+                animationType: SplashScreen.animationType.scale,
+                duration: 850,
+                delay: 500,
+            })
+        }
+
     }
 
     render() {
